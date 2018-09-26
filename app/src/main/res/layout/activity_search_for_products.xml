@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sonu.kumar.jaquar.Activity.SearchForProductsActivity">
+
+    <EditText
+        android:maxLength="20"
+        android:fontFamily="@font/custom_font_dark"
+        android:id="@+id/searchforproductsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="  Search..."
+        android:padding="5dp"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/searchback"
+        android:layout_marginRight="15dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="33dp"
+android:layout_marginTop="11dp"
+
+        android:layout_toLeftOf="@+id/homesearch_btn"
+        android:layout_toStartOf="@+id/homesearch_btn"
+        android:background="@drawable/line" />
+    <ImageView
+        android:id="@+id/homesearch_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/searchforproductsEditText"
+        android:layout_alignRight="@+id/searchforproductsEditText"
+        android:layout_alignTop="@+id/searchforproductsEditText"
+        android:src="@drawable/searchicon" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchforproductsEditText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/searchRecycycleview"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchCoordinate"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sonu.kumar.jaquar.Activity.AddToCartActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:id="@+id/addtocarttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:onClick="gotowhishlist"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@drawable/white_whish_icon"
+            android:id="@+id/cartValueHome1"
+            android:fontFamily="@font/dark"
+            android:textColor="#3739c1"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:onClick="gotowhishlist"
+            android:layout_marginBottom="35dp"
+            android:id="@+id/addtocartwhishlistcount"
+            android:background="@drawable/badge_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="11"
+            android:paddingTop="1dp"
+
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="10sp"/>
+        <TextView
+            android:onClick="gotoCart"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@drawable/ic_shopping_cart_black_24dp"
+            android:id="@+id/cartValue"
+            android:fontFamily="@font/dark"
+            android:textColor="#3739c1"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:onClick="gotoCart"
+            android:layout_marginBottom="35dp"
+            android:id="@+id/addtocartcartcount"
+            android:background="@drawable/badge_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="11"
+            android:paddingTop="1dp"
+
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="10sp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:src="@drawable/loader"
+        android:id="@+id/buyProductImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/addtocarttoolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_background"
+        android:scaleType="fitXY"
+       />
+
+    <TextView
+        android:fontFamily="@font/custom_font_dark"
+        android:id="@+id/buyProductTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyProductImage"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Titel Comes Here"
+        android:textColor="#73201dca"
+        android:textStyle="bold"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/buyProductCodetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyProductTitle"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Product Code :"
+        android:textSize="16dp"
+        android:fontFamily="@font/custom_font_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/buyProductGetProductCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buyProductCodetitle"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/buyProductCodetitle"
+        android:text="Po45ET#!23"
+        android:textColor="#f0000000"
+        android:fontFamily="@font/custom_font"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/buyProductPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyProductCodetitle"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Price :"
+        android:textSize="16dp"
+        android:fontFamily="@font/custom_font"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buyProductPriceTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/buyProductPriceTitle"
+        android:fontFamily="@font/custom_font"
+        android:text="@string/Rs"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/buyProductGetProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buyProductPriceTitle"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/buyProductPriceTitle"
+        android:fontFamily="@font/custom_font"
+        android:text="1500"
+
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buyProductAddtocartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyProductPriceTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+
+        android:textStyle="bold"
+        android:background="#FF4500	"
+        android:fontFamily="@font/custom_font"
+        android:text="ADD TO CART"
+        android:textColor="#fff" />
+
+
+    <Button
+        android:id="@+id/buyProductBuyNowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyProductAddtocartBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Add to WhishList"
+        android:textStyle="bold"
+        android:fontFamily="@font/custom_font"
+        android:textColor="#fff" />
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/addtocarfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyProductGetProductCode"
+        android:layout_toEndOf="@+id/buyProductCodetitle"
+        android:layout_toRightOf="@+id/buyProductCodetitle"
+        app:srcCompat="@drawable/ic_favorite_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cartCoorrdinatelayout"/>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/card_design">
+    <ImageView
+        android:background="#1a1121ff"
+        android:id="@+id/singleProductImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title Comes Here"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/custom_font"
+        android:id="@+id/singleProductTitle"
+        android:layout_marginTop="13dp"
+        android:textColor="#b0667fb6"
+        android:layout_toRightOf="@+id/singleProductImage"
+        android:layout_alignTop="@+id/singleProductImage"
+        android:layout_toEndOf="@+id/singleProductImage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleProductTitle"
+        android:layout_toRightOf="@+id/singleProductImage"
+        android:text="@string/Rs"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/custom_font_dark"
+        android:textColor="#e0000000"
+        android:id="@+id/singleProductPriceSymbol"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/singleProductPriceSymbol"
+        android:layout_alignTop="@+id/singleProductPriceSymbol"
+        android:text="1200"
+        android:fontFamily="@font/custom_font_dark"
+        android:id="@+id/singleProductPrice"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginLeft="3dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product code"
+        android:fontFamily="@font/custom_font"
+
+        android:textColor="#ab000000"
+        android:id="@+id/singleProductProductcode"
+        android:layout_toRightOf="@+id/singleProductImage"
+        android:layout_below="@+id/singleProductPrice"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/singleProductImage" />
+    <TextView
+        android:fontFamily="@font/custom_font_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleProductProductcode"
+        android:layout_toRightOf="@+id/singleProductImage"
+        android:text="View More"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/singleProductViewMore"
+        android:layout_marginLeft="2dp"
+        android:textSize="16dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_toRightOf="@+id/singleProductViewMore"
+        android:layout_alignTop="@+id/singleProductViewMore"
+        android:layout_marginLeft="10dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleProductPrice"
+        android:id="@+id/whishlistimage"
+        android:layout_toRightOf="@+id/singleProductImage"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_favorite_black_24dp"/>
+</RelativeLayout>
